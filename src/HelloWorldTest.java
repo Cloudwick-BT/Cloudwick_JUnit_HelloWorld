@@ -7,7 +7,15 @@ public class HelloWorldTest {
 	public void trueTest1(){
 		String msg = new String("Hello World");
 		HelloWorld tem = new HelloWorld();
-		assertEquals(msg, tem.main(null));
+		String str = tem.main("Hello World");
+		assertEquals(msg, tem.main("Hello World"));
+	}
+	
+	@Test
+	public void falseTest2() {
+		String msg = new String ("Hello World");
+		HelloWorld tem = new HelloWorld();
+		assertEquals(msg, tem.main("Hello"));
 	}
 	
 
