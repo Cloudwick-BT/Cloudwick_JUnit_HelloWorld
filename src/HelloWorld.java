@@ -1,7 +1,7 @@
 
 public class HelloWorld {
-		public static String main( String[] args){
-		return "Hello World";
+		public static String main( String args){
+		return args;
 		}
 	}		
 
